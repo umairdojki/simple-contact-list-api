@@ -1,6 +1,6 @@
 ﻿# simple-contact-list-api
 
-A simple contact list serverless API, allowing a client to add a contact, delete a contact, and view all their contacts. Each contact has a name and telephone number
+A simple contact list serverless API built using the Serverless Framework https://www.serverless.com/. It has routes to add a contact, delete a contact, and get all contacts. Each contact has a name and telephone number
 
 GET /contact - Get all contacts
 
