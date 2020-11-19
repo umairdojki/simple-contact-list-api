@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "name": "Serverless Offline",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["--inspect", "--debug-port=9229"],
+      "program": "${workspaceFolder}/node_modules/serverless/bin/serverless",
+      "args": ["offline"],
+      "port": 9229,
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Mocha Tests",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "-r",
+        "ts-node/register",
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/src/**/*.spec.ts"
+      ],
+      "internalConsoleOptions": "neverOpen",
+      "console": "integratedTerminal",
+      "protocol": "auto"
+    }
+  ]
+}

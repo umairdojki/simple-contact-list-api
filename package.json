@@ -1,0 +1,40 @@
+{
+  "name": "contact-list-api",
+  "version": "1.0.0",
+  "description": "Contact List API",
+  "main": "src/handler.ts",
+  "scripts": {
+    "package": "serverless package --package artifacts",
+    "deploy": "serverless deploy --artifact artifacts/contact-list-api.zip",
+    "build": "rimraf ./dist && tsc",
+    "lint": "eslint --ext .ts --fix ./src/**/*",
+    "test": "mocha -r ts-node/register --colors ./src/**/*.spec.ts"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.17",
+    "@types/node": "^10.12.18",
+    "aws-sdk": "^2.659.0",
+    "source-map-support": "^0.5.10",
+    "uuid": "^8.3.1",
+    "@types/uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "@types/sinon": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "aws-sdk-mock": "^5.1.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "mocha": "^7.1.1",
+    "rimraf": "^3.0.2",
+    "serverless": "^1.72.0",
+    "serverless-offline": "^6.4.0",
+    "sinon": "^9.0.2",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  },
+  "author": "Umair Dojki",
+  "license": "MIT"
+}
