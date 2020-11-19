@@ -11,7 +11,8 @@ POST /contact - Post a new contact
     "telephoneNumber": "79879873434"
 }
 ```
-DELETE /contact/{id}
+
+DELETE /contact/{id} - Deletes contact with {id}
 
 ## Deployment
 
